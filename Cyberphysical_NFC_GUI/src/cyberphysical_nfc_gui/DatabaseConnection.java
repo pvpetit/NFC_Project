@@ -18,7 +18,8 @@ import java.util.Scanner;
 public class DatabaseConnection {
     
     // Database URL and connection tokens
-    private final static String databaseURL = "jdbc:derby://localhost:1527/EmployeeRegistry;user=CyberphysicalAdmin;password=cen4216";
+    private final static String embedSetup = "org.apache.derby.jdbc.EmbeddedDriver";
+    private final static String databaseURL = "jdbc:derby:EmployeeRegistry;user=CyberphysicalAdmin;password=cen4216";
     private static Connection conn = null;
     private static Statement stmt = null;
     
@@ -33,6 +34,7 @@ public class DatabaseConnection {
     public void createConnection() {
         try {
             // creates connection
+            Class.forName(embedSetup).newInstance();
             conn = DriverManager.getConnection(databaseURL);
             System.out.println("DATABASE connected");
             
