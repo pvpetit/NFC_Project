@@ -1,0 +1,132 @@
+/* 
+    Created on : Nov 22, 2019, 10:54:29 PM
+    Author     : Juan Ariza, Phil Petit-Frere 
+*/
+
+/* Global styling changes */
+.label {
+    -fx-text-alignment: center;
+    -fx-font-family: sans-sarif;
+}
+
+.button {
+    -fx-background-radius: 30;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #c99ee8;
+}
+
+.textArea {
+    
+    
+}
+
+.choice-box {
+    
+}
+
+.root {
+    -fx-background-color: #de8181;    
+    /*#cccfe3 */
+}
+
+/* Screen 1: GUI username/password login screen */
+
+#loginUserPassAnchor {
+    
+}
+#loginStatus {
+    
+}
+#usernameLabel {
+    -fx-underline: true;
+}
+#passwordLabel {
+    -fx-underline: true;
+}
+#titleLabel {
+    -fx-font-size: 24px;
+}
+#usernameEnter {
+    
+}
+#passwordEnter {
+    
+}
+#loginButton {
+    -fx-background-color: green;
+}
+#guestButton {
+    
+}
+
+/* Screen 2: GUI NFC tag login screen */
+
+#loginNFCScanAnchor {
+    
+}
+#tagScanTopMessage {
+    
+}
+#tagScanBottomMessage {
+    
+}
+#loginNFCButton	{
+    
+}
+
+/* Screen 3: Main menu screen */
+
+#mainMenuAnchor	{
+    
+}
+#readDataButton {
+    
+}
+#writeDataButton {
+    
+}
+#welcomeLabel {
+    
+}
+#readNFCLabel {
+    
+}
+#writeNFCLabel {
+    
+}
+
+/* Screen 4: Read data screen */
+
+#readDataAnchor	{
+    
+}	
+#readDataLabel {
+    
+}
+#NFCDataListview {
+    
+}
+#scanNFCTagButton {
+    
+}
+#NFCDatalist {
+    
+}
+
+/* Screen 5: Write data screen */
+
+#writeDataAnchor {
+    
+}
+#writeDataLabel {
+    
+}
+#updatesLabel {
+    
+}
+#dataFormatChoicebox {
+    
+}
+#userDataEntryTextarea {
+    
+}

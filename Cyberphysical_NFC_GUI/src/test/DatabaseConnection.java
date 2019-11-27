@@ -1,4 +1,4 @@
-package TEST;
+package test;
 
 /*
  * Connects to the built-in Derby database localhost 
@@ -24,8 +24,10 @@ public class DatabaseConnection {
     private static Connection conn = null;
     private static Statement stmt = null;
     
+    ParameterTransfer PT = new ParameterTransfer();
+    
     // statement used to check if the username and password coincide to the given records
-    private static String loginSQL = "SELECT cardID FROM Employee WHERE username=? AND password=?" ;
+    private static String loginSQL = "SELECT cardID, firstName, lastName FROM Employee WHERE username=? AND password=?";
     
     // Default Constructor
     public void DatabaseConnection() {
@@ -100,9 +102,7 @@ public class DatabaseConnection {
     }
     
     // Overloaded method for use in GUI
-    public String findUIDfromLogin(String[] userInfo) {
-        String username = userInfo[0];
-        String password = userInfo[1];
+    public String findUIDfromLogin(String username, String password) {
         String userTagID = null;
         
         try {
@@ -115,7 +115,11 @@ public class DatabaseConnection {
             while (rs.next()) {
                 /*summon the corresponding Tag ID set to the User's 
                 * account (username and password) from the database*/
-                userTagID = rs.getString("cardid");
+                userTagID = rs.getString("cardID");
+                PT.setUserFirstName(rs.getString("firstName"));
+                PT.setUserLastName(rs.getString("lastName"));
+                System.out.println(PT.getUserFirstName());
+                System.out.println(PT.getUserLastName());
             }
     
         } catch (SQLException es) {
@@ -140,7 +144,7 @@ public class DatabaseConnection {
         String databaseTagID = findUIDfromLogin();
         //System.out.println(databaseTagID);
         
-        /*NFC_Tag_Reader_ACR122U testing = new NFC_Tag_Reader_ACR122U();
+        NFC_Tag_Reader_ACR122U testing = new NFC_Tag_Reader_ACR122U();
         
         compareToIncomingTagID = testing.connect_NFC_Reader_forUID(); 
         
@@ -150,7 +154,7 @@ public class DatabaseConnection {
         }
         else {
             System.out.println("The Tag data does not match the User. Please try again/n");
-        } */
+        } 
     }
     // method end
 }

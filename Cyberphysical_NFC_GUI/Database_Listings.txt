@@ -1,0 +1,13 @@
+ADMIN info
+
+CARDID		FIRSTNAME	LASTNAME	AGE		USERNAME	PASSWORD
+04CC9C72816380	Juan		Ariza		21		jariza98	12341234
+0419897A816381	Philemon	Petit-Frere	21		ppetit34	asdfzxcv
+
+Components in Use
+-----------------
+ACR122U NFC Reader
+tags
+ACS Unified MSI NFC Driver
+
+https://github.com/thomasX/nfc-util/tree/master/NFC_UTIL/src/main/java/info/margreiter/nfc/mifareUltralightC
