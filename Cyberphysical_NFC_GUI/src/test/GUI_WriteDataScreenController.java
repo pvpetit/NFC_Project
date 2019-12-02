@@ -126,6 +126,7 @@ public class GUI_WriteDataScreenController implements Initializable {
             / with a spacebar*/
             byte[] test = new byte[4];
             
+            
             while (counter != transformer.length()) {
             
                 for (int i = 0; i < 4; i++) {

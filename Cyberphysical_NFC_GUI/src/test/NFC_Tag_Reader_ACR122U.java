@@ -66,7 +66,7 @@ public class NFC_Tag_Reader_ACR122U {
                 }
             
                 //COMMENT-OUT FOR TESTING
-                //System.out.println("Tag UID: " + bin2hex(response.getData()));
+                System.out.println("Tag UID: " + bin2hex(response.getData()));
                 tagID = bin2hex(response.getData());
             }
         } catch (CardException ex) {

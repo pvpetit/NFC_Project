@@ -12,7 +12,7 @@
 .button {
     -fx-background-radius: 30;
     -fx-text-fill: #ffffff;
-    -fx-background-color: #c99ee8;
+    -fx-background-color: #213b36;
 }
 
 .textArea {
@@ -25,8 +25,7 @@
 }
 
 .root {
-    -fx-background-color: #de8181;    
-    /*#cccfe3 */
+    -fx-background-color: #b0e68c;    
 }
 
 /* Screen 1: GUI username/password login screen */
@@ -101,7 +100,7 @@
     
 }	
 #readDataLabel {
-    
+    -fx-font-size: 24px;
 }
 #NFCDataListview {
     
@@ -119,7 +118,7 @@
     
 }
 #writeDataLabel {
-    
+    -fx-font-size: 24px;
 }
 #updatesLabel {
     

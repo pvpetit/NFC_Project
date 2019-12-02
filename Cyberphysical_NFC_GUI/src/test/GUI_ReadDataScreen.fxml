@@ -10,7 +10,7 @@
       <Label fx:id="readDataLabel" layoutX="334.0" layoutY="22.0" prefHeight="17.0" prefWidth="136.0" text="Read Data" />
       <ListView fx:id="NFCDataListview" layoutX="189.0" layoutY="57.0" prefHeight="266.0" prefWidth="386.0" />
       <Label fx:id="updatesLabel" layoutX="22.0" layoutY="114.0" prefHeight="17.0" prefWidth="143.0" text="Label" />
-      <Button fx:id="scanNFCTagButton" layoutX="361.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Scan" />
+      <Button fx:id="scanNFCTagButton" layoutX="362.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Scan" />
       <Button fx:id="backToMainMenuButton" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Back to Main" />
    </children>
 </AnchorPane>
